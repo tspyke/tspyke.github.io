@@ -98,6 +98,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   grid-auto-rows: 300px;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .gallery-item {
@@ -113,7 +114,7 @@ img {
 }
 
 .gallery-img:hover {
-  transform: scale (1.5);
+  transform: scale(1.25);
 }
 
 .portfolio-container h1 {
@@ -164,24 +165,24 @@ img {
 
 @media (min-width: 600px) {
   .hero-heading {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .hero-text {
     font-size: 2rem;
     line-height: 2rem;
   }
   .portfolio-container h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
   .about-container {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
   .about-text h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
   .about-text p {
     font-size: 1.1rem;
@@ -191,24 +192,24 @@ img {
 
 @media (min-width: 920px) {
   .hero-heading {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
   .hero-text {
     font-size: 3rem;
     line-height: 3rem;
   }
   .portfolio-container h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .portfolio-container,
   .about-container {
     max-width: 1400px;
   }
   .about-text h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .about-text p {
     font-size: 1.5rem;
