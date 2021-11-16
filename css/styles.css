@@ -166,7 +166,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(212, 134, 157, 0.329);
+  background-color: rgba(255, 255, 255, 0.329);
 }
 
 .hero-image {
@@ -190,13 +190,13 @@ img {
   letter-spacing: 0.05rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 .hero-text {
   font-size: 1.5rem;
   margin-top: 0.5rem;
-  color: white;
+  color: black;
 }
 
 /* Begin Portfolio Gallery Styles */
