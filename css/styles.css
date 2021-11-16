@@ -5,6 +5,13 @@ html {
   box-sizing: border-box;
   font-family: Arial, Arial, Helvetica, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
 }
 
 body {
@@ -106,6 +113,31 @@ img {
   height: 8rem;
 }
 
+@supports (position: sticky) {
+  .top-nav {
+    position: -webkit-sticky; /* for safari */
+    position: sticky;
+  }
+}
+
+.top-nav .logo a,
+.top-nav .nav-menu a {
+  color: black;
+}
+
+.top-nav .nav-menu a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.top-nav .nav-menu a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.section-scroll {
+  scroll-margin-top: 9rem;
+  padding: 0 1rem 4rem 1rem;
+}
+
 .hero-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -116,6 +148,7 @@ img {
   align-items: start;
   height: 100%;
   width: 100%;
+  margin-top: -8rem;
 }
 
 .hero-image-box {
@@ -267,6 +300,15 @@ img {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
+  .nav-bar {
+    line-height: 1.5rem;
+  }
+  .nav-menu {
+    padding: 0 1rem;
+  }
+  .nav-item {
+    flex: 1 1;
+  }
 }
 
 @media (min-width: 920px) {
@@ -297,5 +339,17 @@ img {
   .about-social a {
     font-size: 3rem;
     padding: 0 2rem 2rem 2rem;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 0;
+    line-height: 1rem;
+  }
+  .nav-menu {
+    width: auto;
+    justify-self: end;
+  }
+  .top-nav {
+    width: 100%;
   }
 }
