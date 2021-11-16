@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
+    <!-- Begin Navigation -->
+    <nav class="nav-bar top-nav">
+      <h1 class="logo"><a href="index.html">Tom Spyker</a></h1>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item social-nav-item">
+          <a
+            href="https://instagram.com/clownfishcubed"
+            aria-label="link to Instagram"
+          ></a>
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navigation -->
     <header class="hero-box">
       <section class="hero-image-box">
         <img
@@ -24,7 +40,8 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery -->
-    <section class="portfolio-container">
+    <!-- Begin Personal Portfolio -->
+    <section id="portfolio" class="portfolio-container section-scroll">
       <h1>Personal Portfolio</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item">
@@ -112,6 +129,8 @@
           </a>
         </div>
       </section>
+      <!-- End Personal Portfolio -->
+      <!-- Begin Foundation Portfolio -->
       <h1>Foundation Works</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item">
@@ -134,6 +153,18 @@
             <img
               src="portfolio-img/self-portrait-cutout-digital-tom-spyker.jpg"
               alt="photobashed image of a stylized portrait"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="portfolio-img/beetle-macro-charcoal-tom-spyker.jpg"
+            class="glightbox"
+          >
+            <img
+              src="portfolio-img/beetle-macro-charcoal-tom-spyker.jpg"
+              alt="charcoal drawings of a closeup of a beetle"
               class="gallery-img"
             />
           </a>
@@ -236,9 +267,9 @@
         </div>
       </section>
     </section>
-
+    <!-- End Foundation Portfolio -->
     <!-- Begin About Section -->
-    <section class="about-container">
+    <section id="about" class="about-container section-scroll">
       <section class="about-text">
         <h1>Tom loves writing the "About Me" section on his website</h1>
         <p>
@@ -276,6 +307,7 @@
         />
       </section>
     </section>
+    <!-- End About Section -->
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
