@@ -38,8 +38,8 @@ img {
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   line-height: 1rem;
   overflow: hidden;
   background-color: white;
