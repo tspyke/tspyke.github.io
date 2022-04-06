@@ -53,7 +53,7 @@ img {
 
 .logo,
 .nav-item {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .nav-menu {
